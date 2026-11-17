@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jack Broderick</title>
+<meta name="description" content="Jack Broderick is a writer living in Los Angeles.">
+<meta property="og:title" content="Jack Broderick">
+<meta property="og:description" content="Jack Broderick is a writer living in Los Angeles.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jack-broderick.com/">
+<meta property="og:image" content="https://jack-broderick.com/share.png">
+<meta name="theme-color" content="#24211e">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="lora.woff" as="font" type="font/woff" crossorigin>
+<style>
+  @font-face {
+    font-family: "Lora";
+    src: url("lora.woff") format("woff");
+    font-weight: 400 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  :root {
+    --backdrop: #24211e;
+    --paper:    #ece7df;   /* body text */
+    --quiet:    #b3aca2;   /* the closing lines */
+    --royal:    #4169e1;   /* the full stop, and the tab icon */
+    --link:     #8fa8ff;   /* the same blue, lightened so small text stays readable */
+  }
+
+  * { box-sizing: border-box; }
+
+  html {
+    background: var(--backdrop);
+    color: var(--paper);
+    font-family: "Lora", Georgia, "Times New Roman", serif;
+    font-size: 106.25%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    min-height: 100svh;
+  }
+
+  /* ---------- Layout: a name and a paragraph, centred on the page ---------- */
+
+  body {
+    display: grid;
+    place-items: center;
+    padding: 3.5rem 1.6rem 4rem;
+  }
+
+  .bio {
+    width: 100%;
+    max-width: 31rem;
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: clamp(2.3rem, 9.5vw, 2.9rem);
+    line-height: 1.05;
+    letter-spacing: -0.018em;
+    margin: 0 0 1.25rem;
+  }
+
+  h1 .stop { color: var(--royal); }
+
+  p {
+    font-size: 1.06rem;
+    line-height: 1.68;
+    margin: 0 0 1.15em;
+    text-wrap: pretty;
+  }
+
+  .aside {
+    color: var(--quiet);
+    margin-top: 1.75rem;
+    margin-bottom: 0;
+  }
+
+  a {
+    color: var(--link);
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.06em;
+    text-underline-offset: 0.2em;
+  }
+
+  a:hover { text-decoration-thickness: 0.12em; }
+
+  a:focus-visible {
+    outline: 2px solid var(--link);
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+
+  ::selection { background: var(--link); color: var(--backdrop); }
+
+  @media (min-width: 620px) {
+    body { padding: 4rem 2.5rem 5rem; }
+    h1 { font-size: 3.1rem; margin-bottom: 1.4rem; }
+    p { font-size: 1.1rem; }
+  }
+
+  @media print {
+    html { background: #fff; color: #000; }
+    .aside, a { color: #000; }
+    h1 .stop { color: #4169e1; }
+  }
+</style>
+</head>
+<body>
+
+<main class="bio">
+  <h1>Jack Broderick<span class="stop">.</span></h1>
+
+  <p>Jack Broderick grew up in New Jersey and spent his childhood working in the theatre. He now lives in Los Angeles, where he works as a writer. He is a graduate of the John Wells Division of Writing for Screen &amp; Television at the USC School of Cinematic Arts.</p>
+
+  <p class="aside">He is not on social media. He does answer <a href="mailto:jack@jack-broderick.com">email</a>.</p>
+</main>
+
+</body>
+</html>
